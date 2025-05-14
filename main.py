@@ -94,6 +94,8 @@ def tarayici_minimize_et(driver):
     log_yaz("Tarayıcı minimize ediliyor...")
     driver.minimize_window()
 
+
+"""" 
 def drag_and_drop(driver):
     log_yaz("Sürükle ve bırak işlemi başlatılıyor...")
     source_element = driver.find_element(By.ID, "img1")  # Kaynak öğe
@@ -101,6 +103,9 @@ def drag_and_drop(driver):
     actions = ActionChains(driver)
     actions.drag_and_drop(source_element, target_element).perform()
     log_yaz("Sürükle ve bırak işlemi tamamlandı.")
+
+"""
+
 
 # ---------- Ana İşlem Fonksiyonu ----------
 
@@ -242,8 +247,11 @@ button = tk.Button(root, text="Hava Durumu Sorgula", command=baslat)
 button.pack(pady=5)
 
 # Drag and Drop işlemi için buton ekliyoruz
+"""
 button2 = tk.Button(root, text="Sürükle ve Bırak Testi", command=baslat_surukle)
 button2.pack(pady=10)
+"""
+
 button3 = tk.Button(root, text="Sekmeler Arası Geçiş", command=sekmeler_arasi_gecis)
 button3.pack(pady=15)
 
